@@ -12,8 +12,8 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('admin', function (Blueprint $table) {
-            $table->id_admin();
-            $table->string('username')->nu;
+            $table->id('id_admin');
+            $table->string('username');
             $table->string('email')->unique();
             $table->string('password');
             $table->timestamps();
